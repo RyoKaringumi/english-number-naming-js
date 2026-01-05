@@ -168,7 +168,7 @@ describe("numberToEnglish", () => {
 	});
 
 	it("converts negative numbers", () => {
-		expect(numberToEnglish(-1)).toBe("negative one");
+		expect(numberToEnglish(-1)).toBe("minus one");
 	});
 
 	it("converts larger numbers", () => {
@@ -183,8 +183,8 @@ describe("numberToEnglish", () => {
 	});
 
 	it("converts negative decimal numbers", () => {
-		expect(numberToEnglish(-1.5)).toBe("negative one point five");
-		expect(numberToEnglish(-2.25)).toBe("negative two point two five");
+		expect(numberToEnglish(-1.5)).toBe("minus one point five");
+		expect(numberToEnglish(-2.25)).toBe("minus two point two five");
 	});
 
 	it("converts very large numbers", () => {
