@@ -1,17 +1,40 @@
 {
-  "name": "english-number-naming",
+  "name": "@ryokaringumi/english-number-naming-js",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "A JavaScript library to convert numbers to their English word representations.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc",
-    "test": "vitest"
+    "test": "vitest",
+    "prepublishOnly": "npm run build"
   },
-  "author": "",
+  "keywords": [
+    "number",
+    "english",
+    "conversion",
+    "words"
+  ],
+  "author": "RyoKaringumi",
   "license": "ISC",
-  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ryokaringumi/english-number-naming-js.git"
+  },
+  "homepage": "https://github.com/ryokaringumi/english-number-naming-js#readme",
+  "bugs": {
+    "url": "https://github.com/ryokaringumi/english-number-naming-js/issues"
+  },
   "devDependencies": {
     "@types/node": "^25.0.3",
     "typescript": "^5.9.3",
     "vitest": "^4.0.16"
+  },
+  "vitest": {
+    "include": ["src/**/*.test.ts"],
+    "exclude": ["dist/**"]
   }
 }
